@@ -462,7 +462,7 @@ def clear1():  # reset planszy do poziomu startowego
     poleG4.configure(fg="gray", bg="gray")
     poleG5.configure(fg="gray", bg="gray")
 
-    for i in range(7):
+    for i in range(7): # wyzerowanie matrycy
         for j in range(5):
             Dataset.Matrix[i][j] = 0
 
@@ -531,18 +531,18 @@ def on_down1():  # przesuniecie cyfry na matrycy w dół
         [0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0]
     ]
-    for i in range(7):
+    for i in range(7): 
         for j in range(5):
             if Dataset.Matrix[i][j] == 1:
                 if i + 1 <= 6:
                     Dataset.Matrix_new[i + 1][j] = 1
 
-    for i in range(7):
+    for i in range(7): # wyzerowanie macierzy
         for j in range(5):
             Dataset.Matrix[i][j] = 0
 
     clear1()
-    for i in range(7):
+    for i in range(7): # wywołanie funkcji zamalowującej matryce na przesuniety ksztalt
         for j in range(5):
             if Dataset.Matrix_new[i][j] == 1:
                 on_black2(i, j)
@@ -564,12 +564,12 @@ def on_right1():  # przesuniecie cyfry na matrycy w prawo
                 if j + 1 <= 4:
                     Dataset.Matrix_new[i][j + 1] = 1
 
-    for i in range(7):
+    for i in range(7): # wyzerowanie macierzy
         for j in range(5):
             Dataset.Matrix[i][j] = 0
 
     clear1()
-    for i in range(7):
+    for i in range(7): # wywołanie funkcji zamalowującej matryce na przesuniety ksztalt
         for j in range(5):
             if Dataset.Matrix_new[i][j] == 1:
                 on_black2(i, j)
