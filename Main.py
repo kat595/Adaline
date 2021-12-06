@@ -534,7 +534,7 @@ def on_down1():  # przesuniecie cyfry na matrycy w dół
     for i in range(7):
         for j in range(5):
             if Dataset.Matrix[i][j] == 1:
-                if i + 1 >= 0:
+                if i + 1 <= 6:
                     Dataset.Matrix_new[i + 1][j] = 1
 
     for i in range(7):
@@ -561,7 +561,7 @@ def on_right1():  # przesuniecie cyfry na matrycy w prawo
     for i in range(7):
         for j in range(5):
             if Dataset.Matrix[i][j] == 1:
-                if j + 1 >= 0:
+                if j + 1 <= 4:
                     Dataset.Matrix_new[i][j + 1] = 1
 
     for i in range(7):
