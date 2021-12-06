@@ -2,6 +2,7 @@ from tkinter import *
 import Dataset
 import Functions
 
+#Adaline z ładniejszym kodem, porozdzielanymi plikami
 
 def on_black(num):  # definicja funkcji zaimplementowanej pozniej
     on_black1(num)
