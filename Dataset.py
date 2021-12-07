@@ -1,5 +1,5 @@
 # PRZYKLADY UCZACE
-Matrix = [
+Matrix = [ 
     [0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0],
@@ -7,9 +7,9 @@ Matrix = [
     [0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0]
-]
+] # Odwzorowanie glownej matrycy
 
-Data = [[]] * 10
+Data = [[]] * 10 # stworzenie tablicy wzorcow dla perceptronu
 
 Data[0] = [
     [1, 1, 1, 1, 1],
@@ -19,7 +19,7 @@ Data[0] = [
     [1, 0, 0, 0, 1],
     [1, 0, 0, 0, 1],
     [1, 1, 1, 1, 1]
-]
+] # wzór dla cyfry 0, analogicznie dla reszty ponizej
 
 Data[1] = [
     [0, 0, 0, 0, 1],
@@ -29,7 +29,7 @@ Data[1] = [
     [0, 0, 0, 0, 1],
     [0, 0, 0, 0, 1],
     [0, 0, 0, 0, 1]
-]
+] 
 
 Data[2] = [
     [1, 1, 1, 1, 1],
@@ -39,7 +39,7 @@ Data[2] = [
     [1, 0, 0, 0, 0],
     [1, 0, 0, 0, 0],
     [1, 1, 1, 1, 1]
-]
+] 
 
 Data[3] = [
     [1, 1, 1, 1, 1],

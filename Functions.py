@@ -2,10 +2,10 @@ import Adaline_model
 import numpy as np
 import Dataset
 
-adalines = [Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5)]
+adalines = [Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5), Adaline_model.Adaline(7 * 5)] # tablica Adaline dla kazdej cyfry
 
 
-def learn():
+def learn(): # funkcja do nauki dla perceptronu prawidlowych wzorcow
     data_x = [np.array(t).flatten() for t in Dataset.Data]
 
     for i in range(10):
@@ -14,7 +14,7 @@ def learn():
         adalines[i].train(data_x, data_y)
 
 
-def decide(num):
+def decide(num): # funkcja rozpoznajaca wyklikany wzor na matrycy i pokazujaca w konsoli ktora to cyfra
     data_matrix = np.array(Dataset.Matrix).flatten()
     array_numbers = [[]] * 10
     max_value = 0
