@@ -54,4 +54,3 @@ class Adaline(object):
 
 # ADALINE
 
-# MAIN
