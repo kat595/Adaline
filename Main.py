@@ -27,10 +27,6 @@ def on_down():  # definicja funkcji zaimplementowanej pozniej
 def on_right():  # definicja funkcji zaimplementowanej pozniej
     on_right1()
 
-
-def odszum():  # definicja funkcji zaimplementowanej pozniej
-    odszum1()
-
 # GUI
 
 window = Tk()  # instancja okna
@@ -76,7 +72,7 @@ button7 = Button(window, text="w prawo", command=on_right, font=("Comic Sans", 2
 button7.pack()
 button7.place(x=600, y=700)
 
-button8 = Button(window, text="odszum", command=odszum, font=("Comic Sand", 20), width=10,
+button8 = Button(window, text="odszum", command=Functions.odszum, font=("Comic Sand", 20), width=10,
                  state=ACTIVE)  # przycisk do odszumiania ręcznego
 
 button8.pack()
@@ -574,9 +570,6 @@ def on_right1():  # przesuniecie cyfry na matrycy w prawo
             if Dataset.Matrix_new[i][j] == 1:
                 on_black2(i, j)
 
-
-def odszum1(): # odszumianie ręczne
-    Functions.decide(10)  # przypisujemy większy wzrost % szans najprawdopodobniejszej cyfry
 
 
 window.mainloop()  # zatrzymanie okna na ekranie komputera

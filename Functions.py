@@ -29,3 +29,7 @@ def decide(num): # funkcja rozpoznajaca wyklikany wzor na matrycy i pokazujaca w
             print(i, ':', (int)(adalines[i].output(data_matrix) * 100 + num), '%')
         else:
             print(i, ':', (int)(adalines[i].output(data_matrix) * 100), '%')
+
+def odszum():
+    decide(10)
+    
