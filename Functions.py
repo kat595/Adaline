@@ -31,5 +31,5 @@ def decide(num): # funkcja rozpoznajaca wyklikany wzor na matrycy i pokazujaca w
             print(i, ':', (int)(adalines[i].output(data_matrix) * 100), '%')
 
 
-def odszum(): # przypisujemy większy wzrost % szans najprawdopodobniejszej cyfry
+def zaszum(): # przypisujemy większy wzrost % szans najprawdopodobniejszej cyfry
     decide(10)

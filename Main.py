@@ -72,7 +72,7 @@ button7 = Button(window, text="w prawo", command=on_right, font=("Comic Sans", 2
 button7.pack()
 button7.place(x=600, y=700)
 
-button8 = Button(window, text="odszum", command=Functions.odszum, font=("Comic Sand", 20), width=10,
+button8 = Button(window, text="zaszum", command=Functions.zaszum, font=("Comic Sand", 20), width=10,
                  state=ACTIVE)  # przycisk do odszumiania ręcznego
 
 button8.pack()
